@@ -7,6 +7,8 @@ import RegisterPage from './pages/RegisterPage';
 import DashboardPage from './pages/DashboardPage';
 import PomodoroPage from './pages/PomodoroPage';
 import FlashcardsPage from './pages/FlashcardsPage';
+import CalendarPage from './pages/CalendarPage';
+import SchedulePage from './pages/SchedulePage';
 
 function App() {
   return (
@@ -20,10 +22,10 @@ function App() {
             <Route index element={<Navigate to="/dashboard\" replace />} />
             <Route path="dashboard" element={<DashboardPage />} />
             <Route path="subjects" element={<div>Subjects Page</div>} />
-            <Route path="calendar" element={<div>Calendar Page</div>} />
+            <Route path="calendar" element={<CalendarPage />} />
             <Route path="tasks" element={<div>Tasks Page</div>} />
             <Route path="teachers" element={<div>Teachers Page</div>} />
-            <Route path="schedule" element={<div>Schedule Page</div>} />
+            <Route path="schedule" element={<SchedulePage />} />
             <Route path="pomodoro" element={<PomodoroPage />} />
             <Route path="files" element={<div>Files Page</div>} />
             <Route path="notes" element={<div>Notes Page</div>} />

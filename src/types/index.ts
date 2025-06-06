@@ -91,15 +91,17 @@ export interface QuizQuestion {
 }
 
 // Schedule types
-export interface ScheduleEvent {
+export interface Activity {
   id: string;
   title: string;
-  start: string;
-  end: string;
+  type: 'exam' | 'homework' | 'other';
   subjectId?: string;
-  teacherId?: string;
-  location?: string;
-  type: 'class' | 'activity' | 'task';
+  start: string;
+  end?: string;
+  description?: string;
+  importance: 'low' | 'medium' | 'high';
+  attachments: File[];
+  reminder?: string;
 }
 
 // Pomodoro types
